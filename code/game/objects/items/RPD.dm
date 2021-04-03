@@ -383,8 +383,12 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		playsound(get_turf(src), 'sound/effects/pop.ogg', 50, FALSE)
 	return TRUE
 
-/obj/item/pipe_dispenser/pre_attack(atom/A, mob/user)
-	if(!ISADVANCEDTOOLUSER(user) || istype(A, /turf/open/space/transit))
+/obj/item/pipe_dispenser/pre_attack(atom/A, mob/user) // SKYRAT EDIT: All functionality moved to proc/dispense
+	dispense(A, user)
+
+/obj/item/pipe_dispenser/proc/dispense(atom/A, mob/user)
+	var/turf/T = get_turf(A)
+	if(!ISADVANCEDTOOLUSER(user) || !T || istype(T, /turf/open/space/transit) || isindestructiblewall(T))
 		return ..()
 
 	var/atom/attack_target = A

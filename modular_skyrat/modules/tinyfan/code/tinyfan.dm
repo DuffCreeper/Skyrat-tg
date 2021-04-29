@@ -17,7 +17,6 @@
 /obj/machinery/tinyfan/wrench_act(mob/living/user, obj/item/I)
     . = ..()
 	air_update_turf(TRUE, anchored)
-	return ..()
 
 //Techweb
 /datum/techweb_node/tinyfan

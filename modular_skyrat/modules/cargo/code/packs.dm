@@ -438,7 +438,7 @@
 
 /datum/supply_pack/service/janitor/janchemspray
 	name = "Janitor Chem Sprayer"
-	desc = "Messes everywhere that is too strong for even an advanced mop? Why not purchase  a piece of surplus Janitorial ERT equipment designed to tackle the toughest of messes with self refilling Space Cleaner!"
+	desc = "Messes everywhere that is too strong for even an advanced mop? Why not purchase a piece of surplus Janitorial ERT equipment designed to tackle the toughest of messes with a self refilling Space Cleaner compartment!"
 	cost = CARGO_CRATE_VALUE * 50
 	access = ACCESS_JANITOR
 	contains = list(/obj/item/reagent_containers/spray/chemsprayer/janitor)

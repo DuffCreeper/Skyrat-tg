@@ -132,7 +132,7 @@
 					/obj/item/ammo_box/magazine/multi_sprite/croon)
 	crate_name = "unmarked weapons crate"
 	dangerous = TRUE
-	
+
 /datum/supply_pack/costumes_toys/randomised/improvised
 	name = "Improvised Weapons Crate"
 	desc = "Really hit rock bottom? Well, we've got a few things laying around from a sting-op on pirates we could lend you. (We'll expect these back.)" //they don't, actually.
@@ -435,6 +435,14 @@
 					/obj/item/reagent_containers/glass/bottle/ammonia,
 					/obj/item/reagent_containers/glass/bottle/ammonia)
 	crate_name = "premium janitorial crate"
+
+/datum/supply_pack/service/janitor/janchemspray
+	name = "Janitor Chem Sprayer"
+	desc = "Messes everywhere that is too strong for even an advanced mop? Why not purchase  a piece of surplus Janitorial ERT equipment designed to tackle the toughest of messes with self refilling Space Cleaner!"
+	cost = CARGO_CRATE_VALUE * 40
+	access = ACCESS_JANITOR
+	contains = list(/obj/item/reagent_containers/spray/chemsprayer/janitor)
+	crate_name = "Janitorial Chem Sprayer"
 
 /datum/supply_pack/service/lamplight
 	name = "Lamp Light Crate"
